@@ -1,0 +1,14 @@
+# Documentation for pyproject.toml: https://packaging.python.org/en/latest/guides/writing-pyproject-toml/
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+# name and version are mandatory, change the values but do not delete them.
+[project]
+name = "comp0035-YOURGROUPNUMBER" # Replace YOURGROUPNUMBER with your Moodle 'group' number
+version = "2024.1"
+description = "COMP0035 Coursework using DATASET NAME"  # Replace DATASET NAME with the name of your dataset
+
+# Added 14/10/24
+[tool.setuptools.packages.find]
+include = ["coursework1", "coursework2"]
